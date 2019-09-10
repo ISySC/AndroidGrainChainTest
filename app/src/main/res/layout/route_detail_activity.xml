@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="4">
+
+    <include layout="@layout/layout_header"
+             android:id="@+id/header"/>
+
+    <fragment android:id="@+id/map"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_below="@id/header"
+              android:layout_weight="2"
+              android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:layout_margin="@dimen/mar_10dp"
+                  android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_margin="@dimen/mar_10dp"
+                      android:weightSum="2">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:text="@string/tv_distancia_recorrida"
+                      android:textSize="@dimen/font_size_22sp"
+                      android:textStyle="bold"
+                      android:layout_weight="1"/>
+
+            <TextView android:id="@+id/tv_distance"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:text="{Distance}"
+                      android:layout_gravity="center"
+                      android:textSize="@dimen/font_size_22sp"
+                      android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_margin="10dp"
+                      android:weightSum="2">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:text="@string/tv_tiempo_recorrido"
+                      android:textSize="@dimen/font_size_20sp"
+                      android:textStyle="bold"
+                      android:layout_weight="1"/>
+
+            <TextView android:id="@+id/tv_time"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:text="{Time}"
+                      android:textSize="@dimen/font_size_22sp"
+                      android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_margin="10dp"
+                      android:weightSum="2">
+
+            <Button android:id="@+id/btn_fb"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/mar_10dp"
+                    style="@style/buttons.facebook"/>
+
+            <Button android:id="@+id/btn_erase"
+                    android:layout_weight="1"
+                    style="@style/buttons.erase_register"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

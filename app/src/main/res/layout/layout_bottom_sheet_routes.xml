@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite">
+
+    <TextView android:id="@+id/tv_contact"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/mar_20dp"
+              android:layout_marginTop="@dimen/mar_20dp"
+              android:layout_toLeftOf="@id/ic_close"
+              android:gravity="center"
+              android:textSize="@dimen/font_size_22sp"
+              android:text="@string/tv_route_list"/>
+
+    <ImageView android:id="@+id/ic_close"
+               android:layout_width="@dimen/size_48dp"
+               android:layout_height="@dimen/size_48dp"
+               android:layout_alignParentRight="true"
+               android:scaleType="center"
+               android:layout_marginRight="@dimen/mar_10dp"
+               android:layout_marginTop="@dimen/mar_10dp"
+               android:src="@drawable/ic_close"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_container"
+            android:layout_below="@id/ic_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

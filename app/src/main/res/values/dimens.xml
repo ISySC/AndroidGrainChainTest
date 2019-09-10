@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_size_50dp">50dp</dimen>
+    <dimen name="height_size_100dp">100dp</dimen>
+    <dimen name="width_size_100dp">100dp</dimen>
+    <dimen name="height_size_80dp">60dp</dimen>
+    <dimen name="width_size_80dp">60dp</dimen>
+
+    <dimen name="size_48dp">48dp</dimen>
+    <dimen name="size_32dp">32dp</dimen>
+
+    <dimen name="elevation_12dp">12dp</dimen>
+
+    <dimen name="font_size_18sp">18sp</dimen>
+    <dimen name="font_size_22sp">22sp</dimen>
+    <dimen name="font_size_20sp">20sp</dimen>
+
+    <dimen name="radius_40dp">40dp</dimen>
+    <dimen name="radius_10dp">10dp</dimen>
+
+    <dimen name="mar_10dp">10dp</dimen>
+    <dimen name="mar_20dp">20dp</dimen>
+    <dimen name="mar_5dp">5dp</dimen>
+
+    <dimen name="pad_10dp">10dp</dimen>
+    <dimen name="pad_20dp">20dp</dimen>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView android:id="@+id/ic_close"
+               android:layout_width="@dimen/size_48dp"
+               android:layout_height="@dimen/size_48dp"
+               android:layout_alignParentRight="true"
+               android:layout_margin="@dimen/mar_10dp"
+               android:scaleType="center"
+               android:src="@drawable/ic_close"/>
+
+    <TextView android:id="@+id/tv_title"
+              android:text="{title}"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/font_size_20sp"
+              android:textStyle="bold"
+              android:layout_marginTop="@dimen/mar_20dp"
+              android:layout_marginLeft="@dimen/mar_20dp"
+              android:layout_marginRight="@dimen/mar_20dp"
+              android:layout_marginBottom="@dimen/mar_20dp"/>
+
+    <EditText
+            android:id="@+id/ed_route_name"
+            android:layout_marginLeft="@dimen/mar_20dp"
+            android:layout_marginRight="@dimen/mar_20dp"
+            android:layout_marginTop="@dimen/mar_20dp"
+            android:padding="@dimen/pad_10dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/tv_title"
+            android:background="@drawable/ed"
+            android:textSize="@dimen/font_size_18sp"
+            android:hint="{route name}"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mar_20dp"/>
+
+    <Button android:id="@+id/btn_guardar"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/mar_20dp"
+            android:layout_alignParentRight="true"
+            style="@style/buttons.save_register"
+            android:layout_below="@id/ed_route_name"/>
+
+</RelativeLayout>

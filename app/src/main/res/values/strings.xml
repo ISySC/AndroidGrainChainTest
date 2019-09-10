@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Android Grain Chain Test</string>
+
+    <string name="main_header_title">Mapa</string>
+    <string name="route_detail_header_title">Ruta</string>
+
+    <string name="tv_distancia_recorrida">Distancia recorrida:</string>
+    <string name="tv_tiempo_recorrido">Tiempo del recorrido:</string>
+
+    <string name="btn_fb">Compartir en Facebook</string>
+    <string name="btn_erase_register">Borrar registro</string>
+    <string name="btn_save_register">Guardar registro</string>
+
+    <string name="tv_route_name">{Nombre ruta}</string>
+    <string name="tv_route_list">Lista de rutas</string>
+</resources>

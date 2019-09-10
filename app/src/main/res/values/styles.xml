@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="buttons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:padding">@dimen/pad_10dp</item>
+        <item name="android:textSize">@dimen/font_size_18sp</item>
+    </style>
+
+    <style name="buttons.facebook">
+        <item name="android:background">@drawable/button_details_fb</item>
+        <item name="android:text">@string/btn_fb</item>
+    </style>
+
+    <style name="buttons.erase_register">
+        <item name="android:background">@drawable/button_details_erase</item>
+        <item name="android:text">@string/btn_erase_register</item>
+    </style>
+
+    <style name="buttons.save_register">
+        <item name="android:background">@drawable/button_details_fb</item>
+        <item name="android:text">@string/btn_save_register</item>
+    </style>
+
+</resources>
